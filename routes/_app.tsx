@@ -1,7 +1,7 @@
-import type { PageProps } from "fresh";
 import type { JSX } from "preact";
+import { define } from "../utils.ts";
 
-export default function App({ Component }: PageProps): JSX.Element {
+export default define.page(({ Component }): JSX.Element => {
   return (
     <html lang="en-US">
       <head>
@@ -15,4 +15,4 @@ export default function App({ Component }: PageProps): JSX.Element {
       </body>
     </html>
   );
-}
+});
