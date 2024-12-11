@@ -54,5 +54,8 @@
     "jsx": "precompile",
     "jsxImportSource": "preact",
     "jsxPrecompileSkipElements": ["a", "img", "source", "body", "html", "head"]
+  },
+  "fmt": {
+    "proseWrap": "preserve"
   }
 }

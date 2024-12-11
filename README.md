@@ -1,16 +1,10 @@
-# Fresh project
+# Webmaster (2024–2025)
 
-Your new Fresh project is ready to go. You can follow the Fresh "Getting
-Started" guide here: https://fresh.deno.dev/docs/getting-started
+Webmaster for the 2024–2025 school year.
 
-### Usage
+## Topic
 
-Make sure to install Deno: https://deno.land/manual/getting_started/installation
+The topic for the 2024–2025 school year is vegetarian restaurant:
 
-Then start the project in development mode:
-
-```
-deno task dev
-```
-
-This will watch the project directory and restart as necessary.
+> Design a website for a restaurant (dine-in and carry-out) that specializes in vegetarian food.
+> Showcase the restaurant’s approach (such as farm-to-table, preparation processes, and sustainability) to the food served in the restaurant.
