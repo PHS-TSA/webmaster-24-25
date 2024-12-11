@@ -44,6 +44,6 @@ jobs:
         with:
           deno-version: ${{ env.DENO_VERSION }}
       - name: 📦 Cache dependencies
-        run: deno install
+        run: deno install --frozen
       - name: 🔨 Build
         run: deno task build
