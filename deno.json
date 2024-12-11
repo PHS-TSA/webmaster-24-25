@@ -1,6 +1,24 @@
 {
+  "nodeModulesDir": "auto",
   "tasks": {
-    "check": "deno fmt --check && deno lint && deno check **/*.ts && deno check **/*.tsx",
+    "check": {
+      "command": "sleep 0",
+      "dependencies": ["format", "lint", "typecheck"]
+    },
+    "format": "biome format --write",
+    "format:check": "biome format",
+    "lint": {
+      "command": "sleep 0",
+      "dependencies": ["lint:deno", "lint:biome"]
+    },
+    "lint:deno": "deno lint",
+    "lint:biome": "biome check --error-on-warnings",
+    "ci": {
+      "command": "sleep 0",
+      "dependencies": ["lint:deno", "ci:biome", "typecheck"]
+    },
+    "ci:biome": "biome ci --error-on-warnings",
+    "typecheck": "deno check -q **/*.ts **/*.tsx",
     "dev": "deno run -A --watch=static/,routes/ dev.ts",
     "build": "deno run -A dev.ts build",
     "start": "deno run -A main.ts",
@@ -8,38 +26,33 @@
   },
   "lint": {
     "rules": {
-      "tags": [
-        "fresh",
-        "recommended"
+      "tags": ["fresh"],
+      "include": [
+        "ban-untagged-todo",
+        "explicit-module-boundary-types",
+        "guard-for-in",
+        "no-await-in-loop",
+        "no-external-import",
+        "no-implicit-declare-namespace-export",
+        "no-non-null-asserted-optional-chain",
+        "no-sync-fn-in-async-fn",
+        "no-throw-literal"
       ]
     }
   },
-  "exclude": [
-    "**/_fresh/*"
-  ],
+  "exclude": ["**/_fresh/*"],
   "imports": {
-    "fresh": "jsr:@fresh/core@^2.0.0-alpha.26",
+    "@biomejs/biome": "npm:@biomejs/biome@^1.9.4",
     "@fresh/plugin-tailwind": "jsr:@fresh/plugin-tailwind@^0.0.1-alpha.7",
-    "preact": "npm:preact@^10.25.1",
     "@preact/signals": "npm:@preact/signals@^1.3.1",
+    "fresh": "jsr:@fresh/core@^2.0.0-alpha.26",
+    "preact": "npm:preact@^10.25.1",
     "tailwindcss": "npm:tailwindcss@^3.4.16"
   },
   "compilerOptions": {
-    "lib": [
-      "dom",
-      "dom.asynciterable",
-      "dom.iterable",
-      "deno.ns"
-    ],
+    "lib": ["dom", "dom.asynciterable", "dom.iterable", "deno.ns"],
     "jsx": "precompile",
     "jsxImportSource": "preact",
-    "jsxPrecompileSkipElements": [
-      "a",
-      "img",
-      "source",
-      "body",
-      "html",
-      "head"
-    ]
+    "jsxPrecompileSkipElements": ["a", "img", "source", "body", "html", "head"]
   }
 }

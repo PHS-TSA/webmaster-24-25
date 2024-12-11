@@ -1,20 +1,29 @@
 {
   "deno.enable": true,
   "deno.lint": true,
-  "editor.defaultFormatter": "denoland.vscode-deno",
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "denoland.vscode-deno"
+  "editor.defaultFormatter": "biomejs.biome",
+  "[typescript][typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
   },
-  "[typescript]": {
-    "editor.defaultFormatter": "denoland.vscode-deno"
+  "[javascript][javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
   },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "denoland.vscode-deno"
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
   },
-  "[javascript]": {
-    "editor.defaultFormatter": "denoland.vscode-deno"
+  "[css]": {
+    "editor.defaultFormatter": "biomejs.biome"
   },
-  "css.customData": [
-    ".vscode/tailwind.json"
+  "editor.codeActionsOnSave": {
+    "quickfix.biome": "always",
+    "source.organizeImports.biome": "always"
+  },
+  "css.customData": [".vscode/tailwind.json"],
+  "tailwindCSS.experimental.classRegex": [
+    "tw`([^`]*)",
+    ["tw\\(([^\\)]*)\\)", "`([^`]*)`"]
+  ],
+  "cSpell.words": [
+    "Preact",
   ]
 }

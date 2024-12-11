@@ -31,6 +31,9 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
 
+    permissions:
+      pull-requests: write # Needed for biome comments
+
     steps:
       - name: 📚 Git checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
@@ -44,6 +47,8 @@ jobs:
         with:
           deno-version: ${{ env.DENO_VERSION }}
       - name: 📦 Cache dependencies
-        run: deno install --frozen
+        run: deno install --frozen --allow-scripts=npm:@biomejs/biome@1.9.4
+      - name: 🕵️ Run linter, verify formatting, typecheck
+        run: deno task ci
       - name: 🔨 Build
         run: deno task build

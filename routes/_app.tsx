@@ -1,8 +1,9 @@
 import type { PageProps } from "fresh";
+import type { JSX } from "preact";
 
-export default function App({ Component }: PageProps) {
+export default function App({ Component }: PageProps): JSX.Element {
   return (
-    <html>
+    <html lang="en-US">
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

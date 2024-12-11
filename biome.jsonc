@@ -1,0 +1,68 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "organizeImports": {
+    "enabled": true
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "formatWithErrors": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "all": true,
+      "nursery": {
+        "all": true,
+        "noDocumentImportInPage": "off",
+        "noHeadElement": "off",
+        "noHeadImportInDocument": "off",
+        "noImgElement": "off",
+        "noNestedTernary": "off",
+        "useComponentExportOnlyModules": {
+          "level": "warn",
+          "options": { "allowConstantExport": true }
+        },
+        "useExplicitType": "off",
+        "useImportRestrictions": "off"
+      },
+      "style": {
+        "noDefaultExport": "off",
+        "noImplicitBoolean": "off",
+        "useDefaultSwitchClause": "off",
+        "useFilenamingConvention": "off",
+        "useNamingConvention": "off"
+      },
+      "complexity": {
+        "useLiteralKeys": "off"
+      },
+      "suspicious": {
+        "noConsole": {
+          "level": "warn",
+          "options": {
+            "allow": ["error", "info", "warn"]
+          }
+        },
+        "noReactSpecificProps": "off"
+      },
+      "correctness": {
+        "noUndeclaredDependencies": "off"
+      },
+      "a11y": {
+        "noLabelWithoutControl": "off"
+      }
+    }
+  },
+  "vcs": {
+    "enabled": true,
+    "useIgnoreFile": true,
+    "clientKind": "git",
+    "defaultBranch": "main"
+  },
+  "files": {
+    "ignore": [".vscode/*.json"]
+  },
+  "javascript": {
+    "globals": ["Deno"]
+  }
+}

@@ -1,6 +1,6 @@
 import { createDefine } from "fresh";
 
-// deno-lint-ignore no-empty-interface
+// biome-ignore lint/suspicious/noEmptyInterface: Otherwise, this triggers `noBannedTypes`.
 export interface State {}
 
 export const define = createDefine<State>();

@@ -1,0 +1,62 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "deno",
+      "command": "task",
+      "problemMatcher": ["$deno"],
+      "label": "deno task: dev",
+      "detail": "Run the server in development mode",
+      "args": ["dev"],
+      "group": {
+        "kind": "build"
+      },
+      "icon": {
+        "color": "terminal.ansiGreen",
+        "id": "wrench"
+      },
+    },
+    {
+      "type": "deno",
+      "command": "task",
+      "problemMatcher": ["$deno"],
+      "label": "deno task: start",
+      "detail": "Run the server",
+      "args": ["start"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "icon": {
+        "color": "terminal.ansiWhite",
+        "id": "server"
+      },
+      "runOptions": {
+        "runOn": "folderOpen",
+        "instanceLimit": 1
+      },
+      "promptOnClose": false,
+      "presentation": {
+        "reveal": "silent",
+        "panel": "dedicated",
+        "showReuseMessage": false,
+        "clear": true
+      }
+    },
+    {
+      "type": "deno",
+      "command": "task",
+      "problemMatcher": ["$deno"],
+      "label": "deno task: build",
+      "detail": "Build the website",
+      "args": ["build"],
+      "group": {
+        "kind": "build"
+      },
+      "icon": {
+        "color": "terminal.ansiBlue",
+        "id": "gear"
+      },
+    },
+  ]
+}
