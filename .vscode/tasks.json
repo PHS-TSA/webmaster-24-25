@@ -9,7 +9,8 @@
       "detail": "Run the server in development mode",
       "args": ["dev"],
       "group": {
-        "kind": "build"
+        "kind": "build",
+        "isDefault": true
       },
       "icon": {
         "color": "terminal.ansiGreen",
@@ -24,8 +25,7 @@
       "detail": "Run the server",
       "args": ["start"],
       "group": {
-        "kind": "build",
-        "isDefault": true
+        "kind": "build"
       },
       "icon": {
         "color": "terminal.ansiWhite",
