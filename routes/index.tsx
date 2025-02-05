@@ -1,27 +1,23 @@
-import { useSignal } from "@preact/signals";
-import Counter from "../islands/Counter.tsx";
 import { define } from "../utils.ts";
 
 export default define.page(() => {
-  const count = useSignal(3);
-
   return (
-    <div class="fresh-gradient mx-auto px-4 py-8">
-      <div class="mx-auto flex max-w-screen-md flex-col items-center justify-center">
-        <img
-          class="my-6"
-          src="/logo.svg"
-          width="128"
-          height="128"
-          alt="the Fresh logo: a sliced lemon dripping with juice"
-        />
-        <h1 class="font-bold text-4xl">Welcome to Fresh</h1>
-        <p class="my-4">
-          Try updating this message in the
-          <code class="mx-2">./routes/index.tsx</code> file, and refresh.
-        </p>
-        <Counter count={count} />
-      </div>
-    </div>
+    <>
+      <header class="flex gap-5 p-10">
+        <span class="">Off The Griddle</span>
+        <span class="flex-grow" />
+        <nav class="flex flex-row gap-5">
+          <a href="/lorem">Lorem</a>
+          <a href="/ipsum">Ipsum</a>
+          <a href="/about">About</a>
+          <a href="/menu">Menu</a>
+        </nav>
+      </header>
+      <img
+        class="w-screen"
+        src="/images/farm.png"
+        alt="Farmer goes farming in tractor on farm."
+      />
+    </>
   );
 });
