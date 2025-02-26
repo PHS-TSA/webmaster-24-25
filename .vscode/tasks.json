@@ -16,6 +16,17 @@
         "color": "terminal.ansiGreen",
         "id": "wrench"
       },
+      "runOptions": {
+        "runOn": "folderOpen",
+        "instanceLimit": 1
+      },
+      "promptOnClose": false,
+      "presentation": {
+        "reveal": "silent",
+        "panel": "dedicated",
+        "showReuseMessage": false,
+        "clear": true
+      }
     },
     {
       "type": "deno",
@@ -32,7 +43,6 @@
         "id": "server"
       },
       "runOptions": {
-        "runOn": "folderOpen",
         "instanceLimit": 1
       },
       "promptOnClose": false,
