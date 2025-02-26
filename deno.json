@@ -2,19 +2,16 @@
   "nodeModulesDir": "auto",
   "tasks": {
     "check": {
-      "command": "sleep 0",
       "dependencies": ["format", "lint", "typecheck"]
     },
     "format": "biome format --write",
     "format:check": "biome format",
     "lint": {
-      "command": "sleep 0",
       "dependencies": ["lint:deno", "lint:biome"]
     },
     "lint:deno": "deno lint",
     "lint:biome": "biome check --error-on-warnings",
     "ci": {
-      "command": "sleep 0",
       "dependencies": ["lint:deno", "ci:biome", "typecheck"]
     },
     "ci:biome": "biome ci --error-on-warnings",
