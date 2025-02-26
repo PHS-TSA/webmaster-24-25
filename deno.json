@@ -57,5 +57,11 @@
   },
   "fmt": {
     "proseWrap": "preserve"
+  },
+  "deploy": {
+    "project": "3ad906f9-2647-4016-a0ce-93afbb07f764",
+    "exclude": ["**/node_modules"],
+    "include": [],
+    "entrypoint": "main.ts"
   }
 }
