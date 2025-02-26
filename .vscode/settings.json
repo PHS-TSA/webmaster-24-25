@@ -28,5 +28,6 @@
   ],
   "cSpell.words": [
     "Preact",
-  ]
+  ],
+  "figma.assetExportDirectory": "static/images"
 }

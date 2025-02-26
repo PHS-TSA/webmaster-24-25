@@ -2,6 +2,7 @@
   "recommendations": [
     "denoland.vscode-deno",
     "bradlc.vscode-tailwindcss",
-    "biomejs.biome"
+    "biomejs.biome",
+    "figma.figma-vscode-extension"
   ]
 }
