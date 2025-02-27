@@ -1,3 +1,4 @@
+import { CoverImage } from "../islands/images/CoverImage.tsx";
 import { define } from "../utils.ts";
 
 export default define.page(() => {
@@ -13,11 +14,9 @@ export default define.page(() => {
           <a href="/menu">Menu</a>
         </nav>
       </header>
-      <img
-        class="w-screen"
-        src="/images/farm.png"
-        alt="Farmer goes farming in tractor on farm."
-      />
+      <div>
+        <CoverImage />
+      </div>
     </>
   );
 });

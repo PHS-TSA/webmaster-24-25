@@ -7,8 +7,9 @@ export default define.page(({ Component }): JSX.Element => {
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>webmaster-24-25</title>
+        <title>Off The Griddle</title>
         <link rel="stylesheet" href="/styles.css" />
+        <link rel="preconnect" href="https://res.cloudinary.com" />
       </head>
       <body>
         <Component />
