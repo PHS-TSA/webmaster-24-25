@@ -54,6 +54,7 @@ jobs:
       - name: 🔨 Build
         run: deno task build
       - name: 🔧 Upload to Deno Deploy
+        if: ${{ github.event_name != 'merge_group' }}
         id: deno-deploy
         uses: denoland/deployctl@7bded90d0d09cd99bbfb513966146315db97618b # 1.13.1
         with:
