@@ -17,14 +17,14 @@
         "noDocumentImportInPage": "off",
         "noHeadElement": "off",
         "noHeadImportInDocument": "off",
-        "noImgElement": "off",
         "noNestedTernary": "off",
         "useComponentExportOnlyModules": {
           "level": "warn",
           "options": { "allowConstantExport": true }
         },
         "useExplicitType": "off",
-        "useImportRestrictions": "off"
+        "useImportRestrictions": "off",
+        "noSecrets": "off"
       },
       "style": {
         "noDefaultExport": "off",
@@ -51,7 +51,8 @@
       "a11y": {
         "noLabelWithoutControl": "off"
       }
-    }
+    },
+    "ignore": ["vendor/"]
   },
   "vcs": {
     "enabled": true,

@@ -61,9 +61,12 @@ jobs:
           entrypoint: main.ts
           include: |
             _fresh/
-            static/
+            components/
+            islands/
             routes/
+            static/
             utils/
+            vendor/
             deno.json
             deno.lock
             main.ts
