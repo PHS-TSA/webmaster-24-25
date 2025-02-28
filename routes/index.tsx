@@ -1,5 +1,4 @@
 import { type PageResponse, page } from "fresh";
-import { Header } from "../components/Header.tsx";
 import { CoverImage } from "../islands/images/CoverImage.tsx";
 import { define } from "../utils.ts";
 
@@ -16,11 +15,8 @@ export const handler = define.handlers({
 
 export default define.page<typeof handler>(() => {
   return (
-    <>
-      <Header />
-      <div>
-        <CoverImage />
-      </div>
-    </>
+    <main>
+      <CoverImage />
+    </main>
   );
 });

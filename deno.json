@@ -46,6 +46,7 @@
     "@cloudinary/url-gen": "npm:@cloudinary/url-gen@^1.21.0",
     "@fresh/plugin-tailwind": "jsr:@fresh/plugin-tailwind@^0.0.1-alpha.7",
     "@preact/signals": "npm:@preact/signals@^1.3.2",
+    "clsx": "npm:clsx@^2.1.1",
     "fresh": "jsr:@fresh/core@^2.0.0-alpha.29",
     "preact": "npm:preact@^10.26.2",
     "tailwindcss": "npm:tailwindcss@^3.4.17"
