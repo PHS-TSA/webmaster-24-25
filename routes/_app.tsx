@@ -65,7 +65,10 @@ export default define.page(({ Component, state }): JSX.Element => {
         {metas}
         <link rel="stylesheet" href={asset("/styles.css")} />
       </head>
-      <body f-client-nav={true}>
+      <body
+        class="bg-white text-slate-950 dark:bg-black dark:text-slate-50"
+        f-client-nav={true}
+      >
         <Partial name="body">
           <Component />
         </Partial>
