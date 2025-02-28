@@ -1,8 +1,10 @@
-import { App, fsRoutes, staticFiles } from "fresh";
+import { App, fsRoutes, staticFiles, trailingSlashes } from "fresh";
 import type { State } from "./utils.ts";
 
-export const app = new App<State>();
-app.use(staticFiles());
+export const app = new App<State>()
+  .use(staticFiles())
+  // FIXME: always doesn't work.
+  .use(trailingSlashes("never"));
 
 await fsRoutes(app, {
   dir: "./",

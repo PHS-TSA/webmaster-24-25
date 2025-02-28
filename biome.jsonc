@@ -18,10 +18,7 @@
         "noHeadElement": "off",
         "noHeadImportInDocument": "off",
         "noNestedTernary": "off",
-        "useComponentExportOnlyModules": {
-          "level": "warn",
-          "options": { "allowConstantExport": true }
-        },
+        "useComponentExportOnlyModules": "off",
         "useExplicitType": "off",
         "useImportRestrictions": "off",
         "noSecrets": "off"
