@@ -52,18 +52,17 @@ export default define.page(({ Component, state }): JSX.Element => {
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href={asset("/styles.css")} rel="preload" as="style" />
-        <link rel="preconnect" href="https://res.cloudinary.com" />
         <title>
           {state.meta?.title ? makeTitle(state.meta.title) : "Off The Griddle"}
         </title>
+        <link rel="preconnect" href="https://res.cloudinary.com" />
+        <link rel="stylesheet" href={asset("/styles.css")} />
         {state.meta?.hidden && <meta name="robots" content="noindex" />}
         {state.meta?.description && (
           <meta name="description" content={state.meta.description} />
         )}
         <link rel="manifest" href="/manifest.webmanifest" />
         {metas}
-        <link rel="stylesheet" href={asset("/styles.css")} />
       </head>
       <body
         class="bg-white text-slate-950 dark:bg-black dark:text-slate-50"
