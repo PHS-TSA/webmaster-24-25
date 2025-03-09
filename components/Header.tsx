@@ -2,7 +2,7 @@ import type { JSX } from "preact";
 
 export function Header(): JSX.Element {
   return (
-    <header class="flex gap-5 p-10">
+    <header class="flex gap-5 px-10 py-5">
       <a href="/" class="font-extrabold text-2xl">
         Off The Griddle
       </a>
