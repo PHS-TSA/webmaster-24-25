@@ -7,6 +7,7 @@ import {
   keywords,
   logoSvgUrl,
   makeTitle,
+  siteName,
 } from "../utils/site.ts";
 
 /**
@@ -53,7 +54,7 @@ export default define.page(({ Component, state }): JSX.Element => {
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>
-          {state.meta?.title ? makeTitle(state.meta.title) : "Off The Griddle"}
+          {state.meta?.title ? makeTitle(state.meta.title) : siteName}
         </title>
         <link rel="preconnect" href="https://res.cloudinary.com" />
         <link rel="stylesheet" href={asset("/styles.css")} />

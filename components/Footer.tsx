@@ -23,7 +23,7 @@ export function Footer(props: FooterProps): JSX.Element {
     <footer
       {...props}
       class={clsx(
-        "z-40 grid w-full max-w-screen-xlg grid-flow-col grid-cols-footer-mobile grid-rows-footer-mobile gap-x-2 gap-y-16 bg-slate-50 p-8 text-sm shadow-2xl sm:grid-rows-footer-desktop sm:gap-x-8 md:grid-cols-footer-desktop md:gap-16 dark:bg-slate-950",
+        "z-40 grid w-full max-w-screen-xlg grid-flow-col grid-cols-footer-mobile grid-rows-footer-mobile gap-x-2 gap-y-16 bg-green-950 p-8 text-sm shadow-2xl sm:grid-rows-footer-desktop sm:gap-x-8 md:grid-cols-footer-desktop md:gap-16 dark:bg-green-950",
         props.class,
       )}
     >
@@ -44,9 +44,11 @@ function Who(): JSX.Element {
   return (
     <>
       <div class="flex flex-row items-center gap-1">
-        <div class="font-bold text-xl sm:text-2xl">{siteName}</div>
+        <div class="font-bold text-slate-50 text-xl sm:text-2xl">
+          {siteName}
+        </div>
       </div>
-      <div class="text-balance text-slate-500 dark:text-slate-400">
+      <div class="text-balance text-slate-400 dark:text-slate-400">
         {slogan}
       </div>
     </>

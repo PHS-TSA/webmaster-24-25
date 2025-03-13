@@ -6,34 +6,10 @@ export const handler = define.handlers({
   GET(ctx): PageResponse<number> {
     const status = errorToStatus(ctx.error);
 
-    switch (status) {
-      case 404: {
-        ctx.state.meta = {
-          title: "404 - Page Not Found",
-          hidden: true,
-        };
-
-        break;
-      }
-
-      case 500: {
-        ctx.state.meta = {
-          title: "500 - Internal Server Error",
-          hidden: true,
-        };
-
-        break;
-      }
-
-      default: {
-        ctx.state.meta = {
-          title: "Unknown Error",
-          hidden: true,
-        };
-
-        break;
-      }
-    }
+    ctx.state.meta = {
+      title: `${status} — ${mapStatusToTitle(status)}`,
+      hidden: true,
+    };
 
     return page(status);
   },
@@ -45,6 +21,17 @@ function errorToStatus(error: unknown): number {
   }
 
   return 500;
+}
+
+function mapStatusToTitle(status: number): string {
+  switch (status) {
+    case 404:
+      return "Page Not Found";
+    case 500:
+      return "Internal Server Error";
+    default:
+      return "Unknown Error";
+  }
 }
 
 export default define.page<typeof handler>((props: PageProps): JSX.Element => {

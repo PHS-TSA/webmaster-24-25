@@ -10,6 +10,7 @@ export function CoverImage(): JSX.Element {
       class="w-screen"
       src={coverImage}
       alt="Farmer goes farming in tractor on farm."
+      accessible={true}
     />
   );
 }

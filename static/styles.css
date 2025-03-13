@@ -5,3 +5,33 @@
 :root {
   color-scheme: light dark;
 }
+
+@keyframes parallax {
+  from {
+    --parallax: 0;
+  }
+  to {
+    --parallax: 1;
+  }
+}
+
+@keyframes reveal {
+  from {
+    --reveal: 0;
+  }
+  to {
+    --reveal: 1;
+  }
+}
+
+[view-timeline-name\:--parallax] {
+  animation: parallax linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 100%;
+}
+
+[view-timeline-name\:--reveal] {
+  animation: reveal linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 100%;
+}

@@ -17,6 +17,7 @@ export default function Layout({ Component }: PageProps): JSX.Element {
       <Header />
 
       <Component />
+
       <Footer class="mt-auto" />
     </div>
   );

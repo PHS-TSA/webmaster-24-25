@@ -15,7 +15,7 @@ export const handler = define.handlers({
 export default define.page(() => {
   return (
     <>
-      <header>About</header>
+      <h1>About</h1>
     </>
   );
 });

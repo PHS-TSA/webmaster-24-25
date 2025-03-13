@@ -5,13 +5,14 @@ import type { JSX } from "preact";
 interface ImageProps extends Omit<JSX.ImgHTMLAttributes, "src"> {
   src: CloudinaryImage;
   alt: string;
+  accessible?: boolean;
 }
 
 export function Image(props: ImageProps): JSX.Element {
   return (
     <AdvancedImage
       plugins={[responsive(), placeholder()]}
-      class="w-screen"
+      class={props.class}
       cldImg={props.src}
       alt="Farmer goes farming in tractor on farm."
     />
