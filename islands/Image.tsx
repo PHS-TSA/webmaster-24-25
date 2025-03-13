@@ -8,13 +8,13 @@ interface ImageProps extends Omit<JSX.ImgHTMLAttributes, "src"> {
   accessible?: boolean;
 }
 
-export function Image(props: ImageProps): JSX.Element {
+export function Image({ src, alt, ...props }: ImageProps): JSX.Element {
   return (
     <AdvancedImage
-      plugins={[responsive(), placeholder()]}
-      class={props.class}
-      cldImg={props.src}
-      alt="Farmer goes farming in tractor on farm."
+      {...props}
+      plugins={[responsive(), placeholder({ mode: "" })]}
+      cldImg={src}
+      alt={alt}
     />
   );
 }
