@@ -4,13 +4,13 @@ import { auto as autoFormat } from "@cloudinary/url-gen/qualifiers/format";
 import { auto as autoQuality } from "@cloudinary/url-gen/qualifiers/quality";
 import { useMemo } from "preact/hooks";
 
-export const cloud = new Cloudinary({
+const cloud = new Cloudinary({
   cloud: {
     cloudName: "dg5grlmv5",
   },
 });
 
-export function image(publicId: string): CloudinaryImage {
+function image(publicId: string): CloudinaryImage {
   return cloud
     .image(publicId)
     .delivery(quality(autoQuality()))
