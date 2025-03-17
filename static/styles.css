@@ -35,3 +35,9 @@
   animation-timeline: view();
   animation-range: entry 0% cover 100%;
 }
+
+mark {
+  @apply bg-transparent text-sky-500 dark:text-sky-400;
+
+  font-style: oblique;
+}

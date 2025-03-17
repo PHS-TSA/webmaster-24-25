@@ -27,11 +27,16 @@ export default define.page<typeof handler>(() => {
         <div class="pointer-events-none absolute inset-0 bg-black bg-opacity-10" />
       </div>
 
-      <main class="p-4">
+      <main class="flex flex-col gap-4 p-4">
         <Split
-          left={<MenuImage description="The Saint Louis Arch." />}
+          left={
+            <MenuImage
+              image="where-are-we_fylokf"
+              description="The Saint Louis Arch."
+            />
+          }
           right={
-            <>
+            <div class="place-items-center p-4 text-lg">
               <h2>Where are we?</h2>
 
               <p>
@@ -41,20 +46,28 @@ export default define.page<typeof handler>(() => {
                 <br />
                 We’re open from 7am–2pm every day.
               </p>
-            </>
+            </div>
           }
         />
 
-        <h2>What we serve</h2>
-        <p>
-          We serve the best vegan breakfast in the state of Missouri! Whether
-          you’re looking for something healthy or you want to indulge in some
-          delicious pancakes, we have what you’re looking for. Check out{" "}
-          <a class="underline" href="/menu">
-            our menu
-          </a>{" "}
-          to get hungry!
-        </p>
+        <Split
+          left={
+            <div class="place-items-center p-4 text-lg">
+              <h2>What we serve</h2>
+              <p>
+                We serve the best vegan breakfast in the state of Missouri!
+                Whether you’re looking for something healthy or you want to
+                indulge in some delicious pancakes, we have what you’re looking
+                for. Check out{" "}
+                <a class="underline" href="/menu">
+                  our menu
+                </a>{" "}
+                to get hungry!
+              </p>
+            </div>
+          }
+          right={<MenuImage image="what-we-serve_r9qi3z" description="Yum!" />}
+        />
       </main>
     </div>
   );

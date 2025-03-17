@@ -21,7 +21,8 @@
         "useComponentExportOnlyModules": "off",
         "useExplicitType": "off",
         "useImportRestrictions": "off",
-        "noSecrets": "off"
+        "noSecrets": "off",
+        "useConsistentCurlyBraces": "off"
       },
       "style": {
         "noDefaultExport": "off",
