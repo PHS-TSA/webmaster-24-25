@@ -1,5 +1,7 @@
 import { type PageResponse, page } from "fresh";
+import { Split } from "../components/Split.tsx";
 import { CoverImage } from "../islands/images/CoverImage.tsx";
+import { MenuImage } from "../islands/images/MenuImage.tsx";
 import { define } from "../utils.ts";
 import { siteName } from "../utils/site.ts";
 
@@ -16,7 +18,7 @@ export const handler = define.handlers({
 
 export default define.page<typeof handler>(() => {
   return (
-    <main>
+    <div>
       <div class="relative">
         <span class="absolute z-10 max-w-64 px-14 py-8 font-black text-4xl text-white sm:max-w-sm sm:p-14 sm:text-6xl md:max-w-lg md:p-20 md:text-8xl lg:max-w-4xl lg:p-32 lg:text-9xl">
           {siteName}
@@ -24,6 +26,36 @@ export default define.page<typeof handler>(() => {
         <CoverImage />
         <div class="pointer-events-none absolute inset-0 bg-black bg-opacity-10" />
       </div>
-    </main>
+
+      <main class="p-4">
+        <Split
+          left={<MenuImage description="The Saint Louis Arch." />}
+          right={
+            <>
+              <h2>Where are we?</h2>
+
+              <p>
+                {siteName} is located in <mark> downtown St. Louis</mark> on{" "}
+                <mark>Chouteau Avenue</mark>, right down the street from the
+                Saint Louis Arch.
+                <br />
+                We’re open from 7am–2pm every day.
+              </p>
+            </>
+          }
+        />
+
+        <h2>What we serve</h2>
+        <p>
+          We serve the best vegan breakfast in the state of Missouri! Whether
+          you’re looking for something healthy or you want to indulge in some
+          delicious pancakes, we have what you’re looking for. Check out{" "}
+          <a class="underline" href="/menu">
+            our menu
+          </a>{" "}
+          to get hungry!
+        </p>
+      </main>
+    </div>
   );
 });
