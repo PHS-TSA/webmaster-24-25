@@ -1,5 +1,5 @@
 import { type PageResponse, page } from "fresh";
-import { Split } from "../components/Split.tsx";
+import { Split, SplitTextItem } from "../components/Split.tsx";
 import { CoverImage } from "../islands/images/CoverImage.tsx";
 import { MenuImage } from "../islands/images/MenuImage.tsx";
 import { define } from "../utils.ts";
@@ -36,7 +36,7 @@ export default define.page<typeof handler>(() => {
             />
           }
           right={
-            <div class="place-items-center p-4 text-lg">
+            <SplitTextItem>
               <h2>Where are we?</h2>
 
               <p>
@@ -46,13 +46,13 @@ export default define.page<typeof handler>(() => {
                 <br />
                 We’re open from 7am–2pm every day.
               </p>
-            </div>
+            </SplitTextItem>
           }
         />
 
         <Split
           left={
-            <div class="place-items-center p-4 text-lg">
+            <SplitTextItem>
               <h2>What we serve</h2>
               <p>
                 We serve the best vegan breakfast in the state of Missouri!
@@ -64,7 +64,7 @@ export default define.page<typeof handler>(() => {
                 </a>{" "}
                 to get hungry!
               </p>
-            </div>
+            </SplitTextItem>
           }
           right={<MenuImage image="what-we-serve_r9qi3z" description="Yum!" />}
         />
