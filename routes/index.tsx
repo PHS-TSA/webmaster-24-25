@@ -1,7 +1,6 @@
 import { type PageResponse, page } from "fresh";
 import { Split, SplitTextItem } from "../components/Split.tsx";
-import { CoverImage } from "../islands/images/CoverImage.tsx";
-import { MenuImage } from "../islands/images/MenuImage.tsx";
+import { Image } from "../islands/Image.tsx";
 import { define } from "../utils.ts";
 import { siteName } from "../utils/site.ts";
 
@@ -23,15 +22,18 @@ export default define.page<typeof handler>(() => {
         <span class="absolute z-10 max-w-64 px-14 py-8 font-black text-4xl text-white sm:max-w-sm sm:p-14 sm:text-6xl md:max-w-lg md:p-20 md:text-8xl lg:max-w-4xl lg:p-32 lg:text-9xl">
           {siteName}
         </span>
-        <CoverImage />
+        <Image
+          id="78189594352bb2037d16f73112455128_co5t4c"
+          description="Farmer goes farming in tractor on farm."
+        />
         <div class="pointer-events-none absolute inset-0 bg-black bg-opacity-10" />
       </div>
 
       <main class="flex flex-col gap-4 p-4">
         <Split
           left={
-            <MenuImage
-              image="where-are-we_fylokf"
+            <Image
+              id="where-are-we_fylokf"
               description="The Saint Louis Arch."
             />
           }
@@ -66,7 +68,7 @@ export default define.page<typeof handler>(() => {
               </p>
             </SplitTextItem>
           }
-          right={<MenuImage image="what-we-serve_r9qi3z" description="Yum!" />}
+          right={<Image id="what-we-serve_r9qi3z" description="Yum!" />}
         />
       </main>
     </div>

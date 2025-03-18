@@ -1,20 +1,16 @@
-import { AdvancedImage, placeholder, responsive } from "@cloudinary/react";
-import type { CloudinaryImage } from "@cloudinary/url-gen";
 import type { JSX } from "preact";
+import { useImage } from "../utils/cloudinary.ts";
+import { description } from "../utils/site.ts";
+import { CloudImage } from "./CloudImage.tsx";
 
-interface ImageProps extends Omit<JSX.ImgHTMLAttributes, "src"> {
-  src: CloudinaryImage;
-  alt: string;
-  accessible?: boolean;
+export interface MenuImageProps {
+  id: string;
+
+  description: string;
 }
 
-export function Image({ src, alt, ...props }: ImageProps): JSX.Element {
-  return (
-    <AdvancedImage
-      {...props}
-      plugins={[responsive(), placeholder({ mode: "" })]}
-      cldImg={src}
-      alt={alt}
-    />
-  );
+export function Image({ id }: MenuImageProps): JSX.Element {
+  const menuImage = useImage(id);
+
+  return <CloudImage class="w-full" src={menuImage} alt={description} />;
 }
