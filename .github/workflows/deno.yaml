@@ -65,6 +65,7 @@ jobs:
             components/
             islands/
             routes/
+            sdk/
             static/
             utils/
             vendor/

@@ -6,38 +6,52 @@
   color-scheme: light dark;
 }
 
-@keyframes parallax {
-  from {
-    --parallax: 0;
+@layer components {
+  /* Based on <https://css-tricks.com/single-element-loaders-the-dots/>. */
+  .loader,
+  .loader:before,
+  .loader:after {
+    @apply grid w-5;
+    aspect-ratio: 0.5;
+    background: radial-gradient(#000 68%, #0000 72%) center / 100% 50% no-repeat;
+    animation: load 1.2s infinite linear calc(var(--_s, 0) * 0.4s);
+    transform: translate(calc(var(--_s, 0) * 150%));
   }
-  to {
-    --parallax: 1;
+  .loader:before,
+  .loader:after {
+    content: "";
+    grid-area: 1 / 1;
+  }
+  .loader:before {
+    --_s: -1;
+  }
+  .loader:after {
+    --_s: 1;
+  }
+
+  @keyframes load {
+    20% {
+      background-position: top;
+    }
+    40% {
+      background-position: bottom;
+    }
+    60% {
+      background-position: center;
+    }
   }
 }
 
-@keyframes reveal {
-  from {
-    --reveal: 0;
+@layer base {
+  mark {
+    @apply bg-transparent text-sky-500 dark:text-sky-400;
+
+    font-style: oblique;
   }
-  to {
-    --reveal: 1;
+}
+
+@layer utilities {
+  .grid-rows-message-box {
+    grid-template-rows: 1fr auto;
   }
-}
-
-[view-timeline-name\:--parallax] {
-  animation: parallax linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 100%;
-}
-
-[view-timeline-name\:--reveal] {
-  animation: reveal linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 100%;
-}
-
-mark {
-  @apply bg-transparent text-sky-500 dark:text-sky-400;
-
-  font-style: oblique;
 }
