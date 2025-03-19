@@ -6,7 +6,7 @@ import { CloudImage } from "./CloudImage.tsx";
 export interface MenuImageProps {
   id: string;
 
-  class: string;
+  class?: string;
 
   description: string;
 }
