@@ -15,8 +15,10 @@ export function Split({ left, right }: SplitProps): JSX.Element {
   );
 }
 
-export function SplitTextItem({
-  children,
-}: { children: ComponentChildren }): JSX.Element {
+interface SplitTextItemProps {
+  children: ComponentChildren;
+}
+
+export function SplitTextItem({ children }: SplitTextItemProps): JSX.Element {
   return <div class="place-items-center p-8 text-lg">{children}</div>;
 }

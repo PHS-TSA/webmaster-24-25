@@ -19,11 +19,11 @@ export default define.page<typeof handler>(() => {
     <main class="py-4">
       <h1 class="mx-auto max-w-fit font-semibold text-4xl">Menu</h1>
 
-      <h2 class="mx-auto mt-6 mb-4 max-w-fit font-semibold text-3xl">
-        Griddlelicous
-      </h2>
+      <div class="flex flex-col items-center gap-4 p-4 md:gap-8 md:p-8">
+        <h2 class="mx-auto mt-6 mb-4 max-w-fit text-center font-semibold text-3xl">
+          Griddlelicous
+        </h2>
 
-      <div class="flex flex-col items-center gap-4 p-4">
         <MenuItem
           price="$14.99"
           name="Poppy Seed Pancakes"
@@ -77,13 +77,11 @@ export default define.page<typeof handler>(() => {
         >
           <MenuImage id="tofu-scramble_v0bdlo" description="Yum!" />
         </MenuItem>
-      </div>
 
-      <h2 class="mx-auto mt-6 mb-4 max-w-fit font-semibold text-3xl">
-        The Sweet Side
-      </h2>
+        <h2 class="mx-auto mt-6 mb-4 max-w-fit text-center font-semibold text-3xl">
+          The Sweet Side
+        </h2>
 
-      <div class="flex flex-col items-center gap-4 p-4">
         <MenuItem
           price="$5.99"
           name="Carrot Cupcakes"
@@ -122,11 +120,11 @@ export default define.page<typeof handler>(() => {
         >
           <MenuImage id="cheesecake_chwih0" description="Yum!" />
         </MenuItem>
-      </div>
 
-      <h2 class="mx-auto mt-6 mb-4 max-w-fit font-semibold text-3xl">Bowls</h2>
+        <h2 class="mx-auto mt-6 mb-4 max-w-fit text-center font-semibold text-3xl">
+          Bowls
+        </h2>
 
-      <div class="flex flex-col items-center gap-4 p-4">
         <MenuItem
           price="$9.99"
           name="Fruit Salad"
@@ -171,13 +169,11 @@ export default define.page<typeof handler>(() => {
         >
           <MenuImage id="miso-oatmeal_omvifw" description="Yum!" />
         </MenuItem>
-      </div>
 
-      <h2 class="mx-auto mt-6 mb-4 max-w-fit font-semibold text-3xl">
-        House Specials
-      </h2>
+        <h2 class="mx-auto mt-6 mb-4 max-w-fit text-center font-semibold text-3xl">
+          House Specials
+        </h2>
 
-      <div class="flex flex-col items-center gap-4 p-4">
         <MenuItem
           price="$13.99"
           name="Breakfast Burrito"
@@ -204,13 +200,11 @@ export default define.page<typeof handler>(() => {
         >
           <MenuImage id="english-people-__xkcc6j" description="Yum!" />
         </MenuItem>
-      </div>
 
-      <h2 class="mx-auto mt-6 mb-4 max-w-fit font-semibold text-3xl">
-        Relaxing Refreshments
-      </h2>
+        <h2 class="mx-auto mt-6 mb-4 max-w-fit text-center font-semibold text-3xl">
+          Relaxing Refreshments
+        </h2>
 
-      <div class="flex flex-col items-center gap-4 p-4">
         <MenuItem
           price="$3.99"
           name="Ginger Tea"

@@ -14,7 +14,7 @@ export const handler = define.handlers({
 
 export default define.page(() => {
   return (
-    <main class="p-4">
+    <main class="prose prose-slate dark:prose-invert p-4">
       <h1>About</h1>
       <h2>It’s all about you</h2>
       <p>

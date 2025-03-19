@@ -29,10 +29,11 @@ export default define.page<typeof handler>(() => {
         <div class="pointer-events-none absolute inset-0 bg-black bg-opacity-10" />
       </div>
 
-      <main class="flex flex-col gap-4 p-4">
+      <main class="flex flex-col items-center gap-4 p-4 md:gap-8 md:p-8">
         <Split
           left={
             <Image
+              class="h-full"
               id="where-are-we_fylokf"
               description="The Saint Louis Arch."
             />

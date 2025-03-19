@@ -2,7 +2,7 @@ import { define } from "../utils.ts";
 
 export default define.page(() => {
   return (
-    <main class="p-4">
+    <main class="prose prose-slate dark:prose-invert p-4">
       <h1>Process</h1>
 
       <h2>Locally Sourced Ingredients, Farm Fresh</h2>
@@ -12,8 +12,8 @@ export default define.page(() => {
         process and that our partners are following sustainable practices. By
         partnering with farms like this, we can deliver high quality food and
         promote more sustainable practices. For example, our Tempeh Bacon is
-        sourced from Living Larder which is a family owned St.Louis farm with
-        Soil Association organic certification.
+        sourced from Living Larder, a local, family-owned farm with the Soil
+        Association organic certification.
       </p>
       <h2>Cooking Process: Organic Only</h2>
       <p>

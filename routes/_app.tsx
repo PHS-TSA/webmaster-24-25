@@ -66,7 +66,7 @@ export default define.page(({ Component, state }): JSX.Element => {
         {metas}
       </head>
       <body
-        class="bg-white text-slate-950 dark:bg-black dark:text-slate-50"
+        class="bg-slate-50 text-slate-950 dark:bg-slate-950 dark:text-slate-50"
         f-client-nav={true}
       >
         <Partial name="body">
