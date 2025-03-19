@@ -1,6 +1,6 @@
 import { type PageResponse, page } from "fresh";
 import type { VNode } from "preact";
-import { Image, type MenuImageProps } from "../islands/Image.tsx";
+import { MenuImage } from "../components/MenuImage.tsx";
 import { define } from "../utils.ts";
 
 export const handler = define.handlers({
@@ -30,7 +30,7 @@ export default define.page<typeof handler>(() => {
           description="Delicious gluten free pancakes filled with poppy seeds and oats. Topped with a berry chia jam."
           side="left"
         >
-          <Image id="what-we-serve_r9qi3z" description="Yum!" />
+          <MenuImage id="pancakes_eaikhb" description="Yum!" />
         </MenuItem>
 
         <MenuItem
@@ -39,7 +39,7 @@ export default define.page<typeof handler>(() => {
           description="Hearty waffles made with almonds, oats, applesauce, and sesame seeds. Topped with mixed berries and syrup."
           side="right"
         >
-          <Image id="what-we-serve_r9qi3z" description="Yum!" />
+          <MenuImage id="power-waffles_tbguqi" description="Yum!" />
         </MenuItem>
 
         <MenuItem
@@ -48,7 +48,7 @@ export default define.page<typeof handler>(() => {
           description="Thin rice based crepes filled with wild herbs and homemade cashew parmesan cheese."
           side="left"
         >
-          <Image id="what-we-serve_r9qi3z" description="Yum!" />
+          <MenuImage id="crepe_l1oyal" description="Yum!" />
         </MenuItem>
 
         <MenuItem
@@ -57,7 +57,7 @@ export default define.page<typeof handler>(() => {
           description="There's never a bad time for burgers! Millet and kidney bean based patties topped with tofu, served on a whole grain bun."
           side="right"
         >
-          <Image id="what-we-serve_r9qi3z" description="Yum!" />
+          <MenuImage id="burger_glltty" description="Yum!" />
         </MenuItem>
 
         <MenuItem
@@ -66,7 +66,7 @@ export default define.page<typeof handler>(() => {
           description="Who needs eggs for omelets when you have tofu? Our tofu omelets are stuffed with slowly roasted tomatoes for a scrumptious, healthy meal."
           side="left"
         >
-          <Image id="what-we-serve_r9qi3z" description="Yum!" />
+          <MenuImage id="tofu-omlet_wr1v3o" description="Yum!" />
         </MenuItem>
 
         <MenuItem
@@ -75,7 +75,7 @@ export default define.page<typeof handler>(() => {
           description="Sleek and delicious tofu garnished with the finest chives and served with rye bread."
           side="right"
         >
-          <Image id="what-we-serve_r9qi3z" description="Yum!" />
+          <MenuImage id="tofu-scramble_v0bdlo" description="Yum!" />
         </MenuItem>
       </div>
 
@@ -87,10 +87,13 @@ export default define.page<typeof handler>(() => {
         <MenuItem
           price="$5.99"
           name="Carrot Cupcakes"
-          description="Satisfy your morning sweet tooth with sugary carrot cupcakes topped with lemon coconut frosting."
+          description="Satisfy your morning sweet tooth with sugary carrot cupcakes topped with a lemon coconut frosting."
           side="left"
         >
-          <Image id="what-we-serve_r9qi3z" description="Yum!" />
+          <MenuImage
+            id="Screenshot_2025-03-16_182932_tjxcfb"
+            description="Yum!"
+          />
         </MenuItem>
 
         <MenuItem
@@ -99,7 +102,7 @@ export default define.page<typeof handler>(() => {
           description="Raised glazed donuts with a chocolate glaze topped with hazelnuts and pistachios."
           side="right"
         >
-          <Image id="what-we-serve_r9qi3z" description="Yum!" />
+          <MenuImage id="donuts_tkngls" description="Yum!" />
         </MenuItem>
 
         <MenuItem
@@ -108,7 +111,7 @@ export default define.page<typeof handler>(() => {
           description="Lemon muffins filled with chia seeds and coconut. A great way to start your day!"
           side="left"
         >
-          <Image id="what-we-serve_r9qi3z" description="Yum!" />
+          <MenuImage id="lemon-muffins_abze12" description="Yum!" />
         </MenuItem>
 
         <MenuItem
@@ -117,7 +120,7 @@ export default define.page<typeof handler>(() => {
           description="An almond and coconut base topped with a lemon, cashew, and strawberry filling."
           side="right"
         >
-          <Image id="what-we-serve_r9qi3z" description="Yum!" />
+          <MenuImage id="cheesecake_chwih0" description="Yum!" />
         </MenuItem>
       </div>
 
@@ -130,16 +133,16 @@ export default define.page<typeof handler>(() => {
           description="Kiwis, bananas, grapefruit, strawberries, pineapple, blueberries, and raspberries—oh my! Served with a delightful coconut pudding."
           side="left"
         >
-          <Image id="what-we-serve_r9qi3z" description="Yum!" />
+          <MenuImage id="fruit-salad_ql0evv" description="Yum!" />
         </MenuItem>
 
         <MenuItem
           price="$10.99"
           name="Millet Quinoa Porridge"
-          description="If only goldilocks tried this porridge first—its blend of millet, quinoa, cinnamon, and fresh fruit would have been just right!"
+          description="If only Goldilocks tried this porridge first—its blend of millet, quinoa, cinnamon, and fresh fruit would have been just right!"
           side="right"
         >
-          <Image id="what-we-serve_r9qi3z" description="Yum!" />
+          <MenuImage id="goldy-locks_vfebdo" description="Yum!" />
         </MenuItem>
 
         <MenuItem
@@ -148,7 +151,7 @@ export default define.page<typeof handler>(() => {
           description="Banana, mango, kiwi, pineapple, and spinach, all blended together and topped with raspberries and chia seeds."
           side="left"
         >
-          <Image id="what-we-serve_r9qi3z" description="Yum!" />
+          <MenuImage id="gree-smoothie-bowl_u81ygq" description="Yum!" />
         </MenuItem>
 
         <MenuItem
@@ -157,7 +160,7 @@ export default define.page<typeof handler>(() => {
           description="Our mix of banana, raspberries, blackberries, cranberries, spinach, and oats makes for a berry delicious breakfast."
           side="right"
         >
-          <Image id="what-we-serve_r9qi3z" description="Yum!" />
+          <MenuImage id="berry-smoothie-bowl_nqhu58" description="Yum!" />
         </MenuItem>
 
         <MenuItem
@@ -166,7 +169,7 @@ export default define.page<typeof handler>(() => {
           description="Oats, peas, soy sauce, and white miso cooked together to make one tasty meal."
           side="left"
         >
-          <Image id="what-we-serve_r9qi3z" description="Yum!" />
+          <MenuImage id="miso-oatmeal_omvifw" description="Yum!" />
         </MenuItem>
       </div>
 
@@ -181,7 +184,7 @@ export default define.page<typeof handler>(() => {
           description="Whole wheat tortillas stuffed with tomatoes, avocados, oats, and chickpeas topped with mushrooms."
           side="left"
         >
-          <Image id="what-we-serve_r9qi3z" description="Yum!" />
+          <MenuImage id="el-burrito_nha531" description="Yum!" />
         </MenuItem>
 
         <MenuItem
@@ -190,7 +193,7 @@ export default define.page<typeof handler>(() => {
           description="Tempeh bacon, romaine lettuce, and tomato between a sturdy hash brown bun."
           side="right"
         >
-          <Image id="what-we-serve_r9qi3z" description="Yum!" />
+          <MenuImage id="vegan-blt_vycu46" description="Yum!" />
         </MenuItem>
 
         <MenuItem
@@ -199,7 +202,7 @@ export default define.page<typeof handler>(() => {
           description="Experience the life of English royalty with a full English breakfast of baked beans, mushrooms, vegan sausage, tempeh bacon, baby spinach, grilled tomatoes, and chia toast."
           side="left"
         >
-          <Image id="what-we-serve_r9qi3z" description="Yum!" />
+          <MenuImage id="english-people-__xkcc6j" description="Yum!" />
         </MenuItem>
       </div>
 
@@ -214,16 +217,7 @@ export default define.page<typeof handler>(() => {
           description="Warm, fragrant ginger tea with a hint of lemon."
           side="left"
         >
-          <Image id="what-we-serve_r9qi3z" description="Yum!" />
-        </MenuItem>
-
-        <MenuItem
-          price="$4.99"
-          name="Cold Brew Coffee"
-          description="Smooth and rich cold brew coffee, steeped for 24 hours."
-          side="right"
-        >
-          <Image id="what-we-serve_r9qi3z" description="Yum!" />
+          <MenuImage id="ginger_johpgj" description="Yum!" />
         </MenuItem>
 
         <MenuItem
@@ -232,7 +226,52 @@ export default define.page<typeof handler>(() => {
           description="Creamy oat milk blended with premium ceremonial-grade matcha."
           side="left"
         >
-          <Image id="what-we-serve_r9qi3z" description="Yum!" />
+          <MenuImage id="macha-latte_sqxq3z" description="Yum!" />
+        </MenuItem>
+
+        <MenuItem
+          price="$4.99"
+          name="Chai Latte"
+          description="..."
+          side="right"
+        >
+          <MenuImage id="chai-latte_hygayl" description="Yum!" />
+        </MenuItem>
+
+        <MenuItem
+          price="$4.99"
+          name="Frothy Banana Coffee"
+          description="..."
+          side="right"
+        >
+          <MenuImage id="banana-coffee_oyh1hc" description="Yum!" />
+        </MenuItem>
+
+        <MenuItem
+          price="$4.99"
+          name="Avocado Super Smoothie"
+          description="..."
+          side="right"
+        >
+          <MenuImage id="avocado-smoothie_dr92i2" description="Yum!" />
+        </MenuItem>
+
+        <MenuItem
+          price="$4.99"
+          name="Buttermilk Shake"
+          description="..."
+          side="right"
+        >
+          <MenuImage id="buttermilk-shake_lc6twv" description="Yum!" />
+        </MenuItem>
+
+        <MenuItem
+          price="$4.99"
+          name="Strawberry Chia Smoothie"
+          description="..."
+          side="right"
+        >
+          <MenuImage id="strawberry-chia-smoothie_qpknnz" description="Yum!" />
         </MenuItem>
       </div>
     </main>
@@ -247,7 +286,7 @@ interface MenuItemProps {
   side: "left" | "right";
 
   /** An instance of {@linkcode Image}. */
-  children: VNode<MenuImageProps>;
+  children: VNode;
 }
 
 function MenuItem({ name, description, children, price, side }: MenuItemProps) {

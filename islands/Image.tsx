@@ -6,11 +6,13 @@ import { CloudImage } from "./CloudImage.tsx";
 export interface MenuImageProps {
   id: string;
 
+  class: string;
+
   description: string;
 }
 
-export function Image({ id }: MenuImageProps): JSX.Element {
-  const menuImage = useImage(id);
+export function Image({ id, class: className }: MenuImageProps): JSX.Element {
+  const image = useImage(id);
 
-  return <CloudImage class="w-full" src={menuImage} alt={description} />;
+  return <CloudImage class={className} src={image} alt={description} />;
 }
