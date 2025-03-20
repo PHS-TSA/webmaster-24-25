@@ -54,7 +54,10 @@
 
 @layer base {
   mark {
-    @apply bg-transparent font-bold italic;
+    background-color: transparent;
+    color: inherit;
+    font-style: oblique;
+    font-weight: bold;
   }
 }
 

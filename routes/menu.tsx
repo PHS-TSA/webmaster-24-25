@@ -1,6 +1,6 @@
 import { type PageResponse, page } from "fresh";
 import type { VNode } from "preact";
-import { MenuImage } from "../components/MenuImage.tsx";
+import { SplitImageItem } from "../components/Split.tsx";
 import { define } from "../utils.ts";
 
 export const handler = define.handlers({
@@ -30,7 +30,7 @@ export default define.page<typeof handler>(() => {
           description="Delicious gluten free pancakes filled with poppy seeds and oats. Topped with a berry chia jam."
           side="left"
         >
-          <MenuImage id="pancakes_eaikhb" description="Yum!" />
+          <SplitImageItem id="pancakes_eaikhb" />
         </MenuItem>
 
         <MenuItem
@@ -39,7 +39,7 @@ export default define.page<typeof handler>(() => {
           description="Hearty waffles made with almonds, oats, applesauce, and sesame seeds. Topped with mixed berries and syrup."
           side="right"
         >
-          <MenuImage id="power-waffles_tbguqi" description="Yum!" />
+          <SplitImageItem id="power-waffles_tbguqi" />
         </MenuItem>
 
         <MenuItem
@@ -48,7 +48,7 @@ export default define.page<typeof handler>(() => {
           description="Thin rice based crepes filled with wild herbs and homemade cashew parmesan cheese."
           side="left"
         >
-          <MenuImage id="crepe_l1oyal" description="Yum!" />
+          <SplitImageItem id="crepe_l1oyal" />
         </MenuItem>
 
         <MenuItem
@@ -57,7 +57,7 @@ export default define.page<typeof handler>(() => {
           description="There's never a bad time for burgers! Millet and kidney bean based patties topped with tofu, served on a whole grain bun."
           side="right"
         >
-          <MenuImage id="burger_glltty" description="Yum!" />
+          <SplitImageItem id="burger_glltty" />
         </MenuItem>
 
         <MenuItem
@@ -66,7 +66,7 @@ export default define.page<typeof handler>(() => {
           description="Who needs eggs for omelets when you have tofu? Our tofu omelets are stuffed with slowly roasted tomatoes for a scrumptious, healthy meal."
           side="left"
         >
-          <MenuImage id="tofu-omlet_wr1v3o" description="Yum!" />
+          <SplitImageItem id="tofu-omlet_wr1v3o" />
         </MenuItem>
 
         <MenuItem
@@ -75,7 +75,7 @@ export default define.page<typeof handler>(() => {
           description="Sleek and delicious tofu garnished with the finest chives and served with rye bread."
           side="right"
         >
-          <MenuImage id="tofu-scramble_v0bdlo" description="Yum!" />
+          <SplitImageItem id="tofu-scramble_v0bdlo" />
         </MenuItem>
 
         <h2 class="mx-auto mt-6 mb-4 max-w-fit text-center font-semibold text-3xl">
@@ -88,10 +88,7 @@ export default define.page<typeof handler>(() => {
           description="Satisfy your morning sweet tooth with sugary carrot cupcakes topped with a lemon coconut frosting."
           side="left"
         >
-          <MenuImage
-            id="Screenshot_2025-03-16_182932_tjxcfb"
-            description="Yum!"
-          />
+          <SplitImageItem id="Screenshot_2025-03-16_182932_tjxcfb" />
         </MenuItem>
 
         <MenuItem
@@ -100,7 +97,7 @@ export default define.page<typeof handler>(() => {
           description="Raised glazed donuts with a chocolate glaze topped with hazelnuts and pistachios."
           side="right"
         >
-          <MenuImage id="donuts_tkngls" description="Yum!" />
+          <SplitImageItem id="donuts_tkngls" />
         </MenuItem>
 
         <MenuItem
@@ -109,7 +106,7 @@ export default define.page<typeof handler>(() => {
           description="Lemon muffins filled with chia seeds and coconut. A great way to start your day!"
           side="left"
         >
-          <MenuImage id="lemon-muffins_abze12" description="Yum!" />
+          <SplitImageItem id="lemon-muffins_abze12" />
         </MenuItem>
 
         <MenuItem
@@ -118,7 +115,7 @@ export default define.page<typeof handler>(() => {
           description="An almond and coconut base topped with a lemon, cashew, and strawberry filling."
           side="right"
         >
-          <MenuImage id="cheesecake_chwih0" description="Yum!" />
+          <SplitImageItem id="cheesecake_chwih0" />
         </MenuItem>
 
         <h2 class="mx-auto mt-6 mb-4 max-w-fit text-center font-semibold text-3xl">
@@ -131,7 +128,7 @@ export default define.page<typeof handler>(() => {
           description="Kiwis, bananas, grapefruit, strawberries, pineapple, blueberries, and raspberries—oh my! Served with a delightful coconut pudding."
           side="left"
         >
-          <MenuImage id="fruit-salad_ql0evv" description="Yum!" />
+          <SplitImageItem id="fruit-salad_ql0evv" />
         </MenuItem>
 
         <MenuItem
@@ -140,7 +137,7 @@ export default define.page<typeof handler>(() => {
           description="If only Goldilocks tried this porridge first—its blend of millet, quinoa, cinnamon, and fresh fruit would have been just right!"
           side="right"
         >
-          <MenuImage id="goldy-locks_vfebdo" description="Yum!" />
+          <SplitImageItem id="goldy-locks_vfebdo" />
         </MenuItem>
 
         <MenuItem
@@ -149,7 +146,7 @@ export default define.page<typeof handler>(() => {
           description="Banana, mango, kiwi, pineapple, and spinach, all blended together and topped with raspberries and chia seeds."
           side="left"
         >
-          <MenuImage id="gree-smoothie-bowl_u81ygq" description="Yum!" />
+          <SplitImageItem id="gree-smoothie-bowl_u81ygq" />
         </MenuItem>
 
         <MenuItem
@@ -158,7 +155,7 @@ export default define.page<typeof handler>(() => {
           description="Our mix of banana, raspberries, blackberries, cranberries, spinach, and oats makes for a berry delicious breakfast."
           side="right"
         >
-          <MenuImage id="berry-smoothie-bowl_nqhu58" description="Yum!" />
+          <SplitImageItem id="berry-smoothie-bowl_nqhu58" />
         </MenuItem>
 
         <MenuItem
@@ -167,7 +164,7 @@ export default define.page<typeof handler>(() => {
           description="Oats, peas, soy sauce, and white miso cooked together to make one tasty meal."
           side="left"
         >
-          <MenuImage id="miso-oatmeal_omvifw" description="Yum!" />
+          <SplitImageItem id="miso-oatmeal_omvifw" />
         </MenuItem>
 
         <h2 class="mx-auto mt-6 mb-4 max-w-fit text-center font-semibold text-3xl">
@@ -180,7 +177,7 @@ export default define.page<typeof handler>(() => {
           description="Whole wheat tortillas stuffed with tomatoes, avocados, oats, and chickpeas topped with mushrooms."
           side="left"
         >
-          <MenuImage id="el-burrito_nha531" description="Yum!" />
+          <SplitImageItem id="el-burrito_nha531" />
         </MenuItem>
 
         <MenuItem
@@ -189,7 +186,7 @@ export default define.page<typeof handler>(() => {
           description="Tempeh bacon, romaine lettuce, and tomato between a sturdy hash brown bun."
           side="right"
         >
-          <MenuImage id="vegan-blt_vycu46" description="Yum!" />
+          <SplitImageItem id="vegan-blt_vycu46" />
         </MenuItem>
 
         <MenuItem
@@ -198,7 +195,7 @@ export default define.page<typeof handler>(() => {
           description="Experience the life of English royalty with a full English breakfast of baked beans, mushrooms, vegan sausage, tempeh bacon, baby spinach, grilled tomatoes, and chia toast."
           side="left"
         >
-          <MenuImage id="english-people-__xkcc6j" description="Yum!" />
+          <SplitImageItem id="english-people-__xkcc6j" />
         </MenuItem>
 
         <h2 class="mx-auto mt-6 mb-4 max-w-fit text-center font-semibold text-3xl">
@@ -211,7 +208,7 @@ export default define.page<typeof handler>(() => {
           description="Warm, fragrant ginger tea with a hint of lemon."
           side="left"
         >
-          <MenuImage id="ginger_johpgj" description="Yum!" />
+          <SplitImageItem id="ginger_johpgj" />
         </MenuItem>
 
         <MenuItem
@@ -220,7 +217,7 @@ export default define.page<typeof handler>(() => {
           description="Creamy oat milk blended with premium ceremonial-grade matcha."
           side="left"
         >
-          <MenuImage id="macha-latte_sqxq3z" description="Yum!" />
+          <SplitImageItem id="macha-latte_sqxq3z" />
         </MenuItem>
 
         <MenuItem
@@ -229,7 +226,7 @@ export default define.page<typeof handler>(() => {
           description="..."
           side="right"
         >
-          <MenuImage id="chai-latte_hygayl" description="Yum!" />
+          <SplitImageItem id="chai-latte_hygayl" />
         </MenuItem>
 
         <MenuItem
@@ -238,7 +235,7 @@ export default define.page<typeof handler>(() => {
           description="..."
           side="right"
         >
-          <MenuImage id="banana-coffee_oyh1hc" description="Yum!" />
+          <SplitImageItem id="banana-coffee_oyh1hc" />
         </MenuItem>
 
         <MenuItem
@@ -247,7 +244,7 @@ export default define.page<typeof handler>(() => {
           description="..."
           side="right"
         >
-          <MenuImage id="avocado-smoothie_dr92i2" description="Yum!" />
+          <SplitImageItem id="avocado-smoothie_dr92i2" />
         </MenuItem>
 
         <MenuItem
@@ -256,7 +253,7 @@ export default define.page<typeof handler>(() => {
           description="..."
           side="right"
         >
-          <MenuImage id="buttermilk-shake_lc6twv" description="Yum!" />
+          <SplitImageItem id="buttermilk-shake_lc6twv" />
         </MenuItem>
 
         <MenuItem
@@ -265,7 +262,7 @@ export default define.page<typeof handler>(() => {
           description="..."
           side="right"
         >
-          <MenuImage id="strawberry-chia-smoothie_qpknnz" description="Yum!" />
+          <SplitImageItem id="strawberry-chia-smoothie_qpknnz" />
         </MenuItem>
       </div>
     </main>
@@ -279,7 +276,7 @@ interface MenuItemProps {
 
   side: "left" | "right";
 
-  /** An instance of {@linkcode Image}. */
+  /** An instance of {@linkcode SplitImageItem}. */
   children: VNode;
 }
 
