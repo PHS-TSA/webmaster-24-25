@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    color-scheme: light dark;
+  }
+
+  mark {
+    background-color: transparent;
+    color: inherit;
+    font-style: oblique;
+    font-weight: bold;
+  }
+}
+
 @layer components {
   /* Based on <https://css-tricks.com/single-element-loaders-the-dots/>. */
   .loader,
@@ -46,28 +59,7 @@
       background-position: center;
     }
   }
-}
 
-@layer base {
-  :root {
-    color-scheme: light dark;
-  }
-
-  mark {
-    background-color: transparent;
-    color: inherit;
-    font-style: oblique;
-    font-weight: bold;
-  }
-}
-
-@layer utilities {
-  .grid-rows-message-box {
-    grid-template-rows: 1fr auto;
-  }
-}
-
-@layer components {
   .timeline {
     @apply relative p-11 md:grid grid-flow-row-dense;
 
@@ -121,5 +113,34 @@
 
   .timeline-container.timeline-right::before {
     @apply md:-left-[2px];
+  }
+}
+
+@layer utilities {
+  .grid-rows-message-box {
+    grid-template-rows: 1fr auto;
+  }
+
+  .bars {
+    text-align: center;
+  }
+  .bars::before,
+  .bars::after {
+    background-color: currentColor;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+  }
+
+  .bars::before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  .bars::after {
+    left: 0.5em;
+    margin-right: -50%;
   }
 }

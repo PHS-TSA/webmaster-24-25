@@ -20,7 +20,7 @@ export default define.page<typeof handler>(() => {
       <h1 class="mx-auto max-w-fit font-semibold text-4xl">Menu</h1>
 
       <div class="flex flex-col items-center gap-4 py-4 md:gap-8 md:p-8">
-        <h2 class="mx-auto mt-6 mb-4 max-w-fit text-center font-semibold text-3xl">
+        <h2 class="bars mt-6 mb-4 w-2/5 max-w-80 font-semibold text-3xl">
           Griddlelicous
         </h2>
 
@@ -78,7 +78,7 @@ export default define.page<typeof handler>(() => {
           <SplitImageItem id="tofu-scramble_v0bdlo" />
         </MenuItem>
 
-        <h2 class="mx-auto mt-6 mb-4 max-w-fit text-center font-semibold text-3xl">
+        <h2 class="bars mt-6 mb-4 w-2/5 max-w-80 font-semibold text-3xl">
           The Sweet Side
         </h2>
 
@@ -118,7 +118,7 @@ export default define.page<typeof handler>(() => {
           <SplitImageItem id="cheesecake_chwih0" />
         </MenuItem>
 
-        <h2 class="mx-auto mt-6 mb-4 max-w-fit text-center font-semibold text-3xl">
+        <h2 class="bars mt-6 mb-4 w-2/5 max-w-80 font-semibold text-3xl">
           Bowls
         </h2>
 
@@ -167,7 +167,7 @@ export default define.page<typeof handler>(() => {
           <SplitImageItem id="miso-oatmeal_omvifw" />
         </MenuItem>
 
-        <h2 class="mx-auto mt-6 mb-4 max-w-fit text-center font-semibold text-3xl">
+        <h2 class="bars mt-6 mb-4 w-2/5 max-w-80 font-semibold text-3xl">
           House Specials
         </h2>
 
@@ -198,7 +198,7 @@ export default define.page<typeof handler>(() => {
           <SplitImageItem id="english-people-__xkcc6j" />
         </MenuItem>
 
-        <h2 class="mx-auto mt-6 mb-4 max-w-fit text-center font-semibold text-3xl">
+        <h2 class="bars mt-6 mb-4 w-2/5 max-w-80 font-semibold text-3xl">
           Relaxing Refreshments
         </h2>
 
