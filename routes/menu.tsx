@@ -37,7 +37,7 @@ export default define.page<typeof handler>(() => {
           price="$12.99"
           name="Power Waffles"
           description="Hearty waffles made with almonds, oats, applesauce, and sesame seeds. Topped with mixed berries and syrup."
-          side="right"
+          side="left"
         >
           <SplitImageItem id="power-waffles_tbguqi" />
         </MenuItem>
@@ -46,7 +46,7 @@ export default define.page<typeof handler>(() => {
           price="$13.99"
           name="Spelt-Rice Crepes"
           description="Thin rice based crepes filled with wild herbs and homemade cashew parmesan cheese."
-          side="left"
+          side="right"
         >
           <SplitImageItem id="crepe_l1oyal" />
         </MenuItem>
@@ -73,7 +73,7 @@ export default define.page<typeof handler>(() => {
           price="$12.99"
           name="Tofu Scramble"
           description="Sleek and delicious tofu garnished with the finest chives and served with rye bread."
-          side="right"
+          side="left"
         >
           <SplitImageItem id="tofu-scramble_v0bdlo" />
         </MenuItem>
@@ -86,7 +86,7 @@ export default define.page<typeof handler>(() => {
           price="$5.99"
           name="Carrot Cupcakes"
           description="Satisfy your morning sweet tooth with sugary carrot cupcakes topped with a lemon coconut frosting."
-          side="left"
+          side="right"
         >
           <SplitImageItem id="Screenshot_2025-03-16_182932_tjxcfb" />
         </MenuItem>
@@ -113,7 +113,7 @@ export default define.page<typeof handler>(() => {
           price="$6.99"
           name="Cheesecake Tartlets"
           description="An almond and coconut base topped with a lemon, cashew, and strawberry filling."
-          side="right"
+          side="left"
         >
           <SplitImageItem id="cheesecake_chwih0" />
         </MenuItem>
@@ -126,7 +126,7 @@ export default define.page<typeof handler>(() => {
           price="$9.99"
           name="Fruit Salad"
           description="Kiwis, bananas, grapefruit, strawberries, pineapple, blueberries, and raspberries—oh my! Served with a delightful coconut pudding."
-          side="left"
+          side="right"
         >
           <SplitImageItem id="fruit-salad_ql0evv" />
         </MenuItem>
@@ -162,7 +162,7 @@ export default define.page<typeof handler>(() => {
           price="$10.99"
           name="Miso Oatmeal"
           description="Oats, peas, soy sauce, and white miso cooked together to make one tasty meal."
-          side="left"
+          side="right"
         >
           <SplitImageItem id="miso-oatmeal_omvifw" />
         </MenuItem>
@@ -215,7 +215,7 @@ export default define.page<typeof handler>(() => {
           price="$5.99"
           name="Matcha Latte"
           description="Creamy oat milk blended with premium ceremonial-grade matcha."
-          side="left"
+          side="right"
         >
           <SplitImageItem id="macha-latte_sqxq3z" />
         </MenuItem>
@@ -224,7 +224,7 @@ export default define.page<typeof handler>(() => {
           price="$4.99"
           name="Chai Latte"
           description="A warming blend of aromatic spices and black tea, perfectly balanced with creamy oat milk and a touch of agave sweetness."
-          side="right"
+          side="left"
         >
           <SplitImageItem id="chai-latte_hygayl" />
         </MenuItem>
@@ -242,7 +242,7 @@ export default define.page<typeof handler>(() => {
           price="$4.99"
           name="Avocado Super Smoothie"
           description="Creamy avocado blended with spinach, banana, and almond milk for a nutrient-packed green dream that’ll keep you powered up all day."
-          side="right"
+          side="left"
         >
           <SplitImageItem id="avocado-smoothie_dr92i2" />
         </MenuItem>
@@ -260,7 +260,7 @@ export default define.page<typeof handler>(() => {
           price="$4.99"
           name="Strawberry Chia Smoothie"
           description="Fresh strawberries and banana whirled with coconut yogurt and chia seeds—it’s like summer in a glass with a satisfying dose of superfood."
-          side="right"
+          side="left"
         >
           <SplitImageItem id="strawberry-chia-smoothie_qpknnz" />
         </MenuItem>
