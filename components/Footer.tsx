@@ -30,6 +30,10 @@ export function Footer(props: FooterProps): JSX.Element {
       <div class="col-start-1 col-end-2 row-start-1 row-end-2">
         <Who />
       </div>
+
+      <div class="col-start-2 col-end-3 row-start-1 row-end-2">
+        <References />
+      </div>
     </footer>
   );
 }
@@ -50,6 +54,16 @@ function Who(): JSX.Element {
       </div>
       <div class="text-balance text-slate-400 dark:text-slate-400">
         {slogan}
+      </div>
+    </>
+  );
+}
+
+function References(): JSX.Element {
+  return (
+    <>
+      <div class="text-balance text-slate-400 dark:text-slate-400">
+        <a href="/references">References</a>
       </div>
     </>
   );

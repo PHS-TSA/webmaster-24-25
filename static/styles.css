@@ -143,4 +143,8 @@
     left: 0.5em;
     margin-right: -50%;
   }
+
+  .prose {
+    max-width: unset;
+  }
 }
