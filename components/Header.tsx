@@ -3,7 +3,7 @@ import { siteName } from "../utils/site.ts";
 
 export function Header(): JSX.Element {
   return (
-    <header class="flex flex-col gap-5 bg-green-500 px-10 py-5 md:flex-row dark:bg-green-800">
+    <nav class="flex flex-col gap-5 bg-green-500 px-10 py-5 md:flex-row dark:bg-green-800">
       <a href="/" class="text-pretty font-extrabold text-3xl">
         {siteName}
       </a>
@@ -17,7 +17,7 @@ export function Header(): JSX.Element {
         <NavItem href="/about">About</NavItem>
         <NavItem href="/menu">Menu</NavItem>
       </nav>
-    </header>
+    </nav>
   );
 }
 
