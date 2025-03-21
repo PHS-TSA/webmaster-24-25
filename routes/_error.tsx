@@ -51,7 +51,7 @@ export default define.page<typeof handler>((props: PageProps): JSX.Element => {
 function Error404() {
   return (
     <>
-      <p>The page you were looking for doesn't exist.</p>
+      <p>The page you were looking for doesn’t exist.</p>
       <a href="/" class="underline">
         Go back home
       </a>

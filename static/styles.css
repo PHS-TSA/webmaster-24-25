@@ -114,6 +114,13 @@
   .timeline-container.timeline-right::before {
     @apply md:-left-[2px];
   }
+
+  .no-timeline.timeline::after {
+    @apply !hidden;
+  }
+  .no-timeline .timeline-container::before {
+    @apply !hidden;
+  }
 }
 
 @layer utilities {
