@@ -288,7 +288,7 @@ function MenuItem({ name, description, children, price, side }: MenuItemProps) {
       {side === "left" && child}
 
       <div class="w-full place-items-center p-4 text-lg md:w-5/12">
-        <h2 class="text-xl">{name}</h2>
+        <h3 class="text-xl">{name}</h3>
         <p>Price: {price}</p>
         <p>{description}</p>
       </div>
