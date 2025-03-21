@@ -223,7 +223,7 @@ export default define.page<typeof handler>(() => {
         <MenuItem
           price="$4.99"
           name="Chai Latte"
-          description="..."
+          description="A warming blend of aromatic spices and black tea, perfectly balanced with creamy oat milk and a touch of agave sweetness."
           side="right"
         >
           <SplitImageItem id="chai-latte_hygayl" />
@@ -232,7 +232,7 @@ export default define.page<typeof handler>(() => {
         <MenuItem
           price="$4.99"
           name="Frothy Banana Coffee"
-          description="..."
+          description="Our signature fair-trade coffee blended with caramelized banana and topped with a cloud of velvety coconut foam—breakfast and coffee in one delicious cup!"
           side="right"
         >
           <SplitImageItem id="banana-coffee_oyh1hc" />
@@ -241,7 +241,7 @@ export default define.page<typeof handler>(() => {
         <MenuItem
           price="$4.99"
           name="Avocado Super Smoothie"
-          description="..."
+          description="Creamy avocado blended with spinach, banana, spirulina, and almond milk for a nutrient-packed green dream that’ll keep you powered up all day."
           side="right"
         >
           <SplitImageItem id="avocado-smoothie_dr92i2" />
@@ -250,7 +250,7 @@ export default define.page<typeof handler>(() => {
         <MenuItem
           price="$4.99"
           name="Buttermilk Shake"
-          description="..."
+          description="Our cultured cashew buttermilk blended with maple syrup and vanilla bean creates a tangy-sweet shake that's both nostalgic and revolutionary."
           side="right"
         >
           <SplitImageItem id="buttermilk-shake_lc6twv" />
@@ -259,7 +259,7 @@ export default define.page<typeof handler>(() => {
         <MenuItem
           price="$4.99"
           name="Strawberry Chia Smoothie"
-          description="..."
+          description="Fresh strawberries and banana whirled with coconut yogurt and chia seeds—it’s like summer in a glass with a satisfying superfood boost."
           side="right"
         >
           <SplitImageItem id="strawberry-chia-smoothie_qpknnz" />
