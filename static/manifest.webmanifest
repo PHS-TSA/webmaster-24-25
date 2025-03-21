@@ -1,0 +1,139 @@
+{
+  "name": "Off the Griddle",
+  "short_name": "Off the Griddle",
+  "description": "Off the Griddle is the best vegan restaurant in town.",
+  "id": "/",
+  "scope": "/",
+  "start_url": "/",
+  "lang": "en-US",
+  "dir": "ltr",
+  "background_color": "#22C55E",
+  "theme_color": "#22C55E",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "browser"],
+  "orientation": "landscape",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo-maskable.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/logo-sm.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo-xs.png",
+      "type": "image/png",
+      "sizes": "96x96",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo-2xs.png",
+      "type": "image/png",
+      "sizes": "64x64",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo.svg",
+      "type": "svg",
+      "sizes": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "About",
+      "url": "/about/",
+      "icons": [
+        {
+          "src": "/logo-xs.png",
+          "type": "image/png",
+          "sizes": "96x96",
+          "purpose": "any"
+        },
+        {
+          "src": "/logo-xs.png",
+          "type": "image/png",
+          "sizes": "96x96",
+          "purpose": "any"
+        }
+      ]
+    },
+    {
+      "name": "Calculate Pricing",
+      "short_name": "calculator",
+      "url": "/calculator/",
+      "description": "Calculate and compare the pricing of solar and geothermal energy solutions.",
+      "icons": [
+        {
+          "src": "/logo-xs.png",
+          "type": "image/png",
+          "sizes": "96x96",
+          "purpose": "any"
+        },
+        {
+          "src": "/logo-xs.png",
+          "type": "image/png",
+          "sizes": "96x96",
+          "purpose": "any"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/wide/1.png",
+      "sizes": "2880x1800",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "The homepage features stunning pictures."
+    },
+    {
+      "src": "/screenshots/wide/2.png",
+      "sizes": "2880x1800",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "We provide an informative, easy to use calculator."
+    },
+    {
+      "src": "/screenshots/wide/3.png",
+      "sizes": "2880x1800",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Our chatbot is helpful and can provide assistance on just about any related topic."
+    },
+    {
+      "src": "/screenshots/narrow/1.png",
+      "sizes": "628x1256",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "The homepage features stunning pictures."
+    },
+    {
+      "src": "/screenshots/narrow/2.png",
+      "sizes": "628x1256",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "We provide an informative, easy to use calculator."
+    },
+    {
+      "src": "/screenshots/narrow/3.png",
+      "sizes": "628x1256",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Our chatbot is helpful and can provide assistance on just about any related topic."
+    }
+  ],
+  "categories": ["food", "education"],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

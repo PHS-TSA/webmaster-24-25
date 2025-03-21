@@ -18,20 +18,19 @@
         "noHeadElement": "off",
         "noHeadImportInDocument": "off",
         "noNestedTernary": "off",
-        "useComponentExportOnlyModules": {
-          "level": "warn",
-          "options": { "allowConstantExport": true }
-        },
+        "useComponentExportOnlyModules": "off",
         "useExplicitType": "off",
         "useImportRestrictions": "off",
-        "noSecrets": "off"
+        "noSecrets": "off",
+        "useConsistentCurlyBraces": "off"
       },
       "style": {
         "noDefaultExport": "off",
         "noImplicitBoolean": "off",
         "useDefaultSwitchClause": "off",
         "useFilenamingConvention": "off",
-        "useNamingConvention": "off"
+        "useNamingConvention": "off",
+        "useBlockStatements": "off"
       },
       "complexity": {
         "useLiteralKeys": "off"

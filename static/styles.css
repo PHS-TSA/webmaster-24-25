@@ -1,12 +1,157 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.fresh-gradient {
-  background-color: rgb(134, 239, 172);
-  background-image: linear-gradient(
-    to right bottom,
-    rgb(219, 234, 254),
-    rgb(187, 247, 208),
-    rgb(254, 249, 195)
-  );
+
+@layer base {
+  :root {
+    color-scheme: light dark;
+  }
+
+  mark {
+    background-color: transparent;
+    color: inherit;
+    font-style: oblique;
+    font-weight: bold;
+  }
+}
+
+@layer components {
+  /* Based on <https://css-tricks.com/single-element-loaders-the-dots/>. */
+  .loader,
+  .loader:before,
+  .loader:after {
+    @apply grid w-5;
+    aspect-ratio: 0.5;
+    background: radial-gradient(#000 68%, #0000 72%) center / 100% 50% no-repeat;
+    animation: load 1.2s infinite linear calc(var(--_s, 0) * 0.4s);
+    transform: translate(calc(var(--_s, 0) * 150%));
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .loader,
+    .loader:before,
+    .loader:after {
+      background: radial-gradient(#fff 68%, #fff0 72%) center / 100% 50%
+        no-repeat;
+    }
+  }
+
+  .loader:before,
+  .loader:after {
+    content: "";
+    grid-area: 1 / 1;
+  }
+  .loader:before {
+    --_s: -1;
+  }
+  .loader:after {
+    --_s: 1;
+  }
+
+  @keyframes load {
+    20% {
+      background-position: top;
+    }
+    40% {
+      background-position: bottom;
+    }
+    60% {
+      background-position: center;
+    }
+  }
+
+  .timeline {
+    @apply relative p-11 md:grid grid-flow-row-dense;
+
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .timeline::after {
+    @apply left-11 bg-slate-950 md:left-1/2 dark:bg-slate-50;
+
+    content: "";
+    position: absolute;
+    width: 1px;
+    top: 3.5rem;
+    bottom: 0;
+    margin-left: -3px;
+    height: calc(100% - 5.5rem);
+  }
+
+  .timeline-container,
+  .timeline-alt {
+    padding: 10px 40px;
+    position: relative;
+  }
+
+  .timeline-container {
+    @apply prose prose-slate dark:prose-invert prose-headings:mt-0;
+
+    max-width: unset;
+  }
+
+  .timeline-left {
+    grid-column: 1;
+  }
+
+  .timeline-right {
+    grid-column: 2;
+  }
+
+  .timeline-container::before {
+    @apply absolute h-px bg-slate-950 max-md:-left-[2px] dark:bg-slate-50;
+
+    content: " ";
+    width: 30px;
+    top: 18px;
+    z-index: 1;
+  }
+
+  .timeline-container.timeline-left::before {
+    @apply md:right-[3px];
+  }
+
+  .timeline-container.timeline-right::before {
+    @apply md:-left-[2px];
+  }
+
+  .no-timeline.timeline::after {
+    @apply !hidden;
+  }
+  .no-timeline .timeline-container::before {
+    @apply !hidden;
+  }
+}
+
+@layer utilities {
+  .grid-rows-message-box {
+    grid-template-rows: 1fr auto;
+  }
+
+  .bars {
+    text-align: center;
+  }
+  .bars::before,
+  .bars::after {
+    background-color: currentColor;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+  }
+
+  .bars::before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  .bars::after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+
+  .prose {
+    max-width: unset;
+  }
 }

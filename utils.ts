@@ -1,6 +1,13 @@
 import { createDefine } from "fresh";
 
-// biome-ignore lint/suspicious/noEmptyInterface: Otherwise, this triggers `noBannedTypes`.
-export interface State {}
+export interface State {
+  meta?: Meta;
+}
+
+export interface Meta {
+  readonly title?: string;
+  readonly description?: string;
+  readonly hidden?: boolean;
+}
 
 export const define = createDefine<State>();
