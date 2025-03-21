@@ -146,7 +146,7 @@ export default define.page<typeof handler>(() => {
           description="Banana, mango, kiwi, pineapple, and spinach, all blended together and topped with raspberries and chia seeds."
           side="left"
         >
-          <SplitImageItem id="gree-smoothie-bowl_u81ygq" />
+          <SplitImageItem id="gree-smoothie-bowl_u81ygq" nofocus />
         </MenuItem>
 
         <MenuItem
@@ -208,7 +208,7 @@ export default define.page<typeof handler>(() => {
           description="Warm, fragrant ginger tea with a hint of lemon."
           side="left"
         >
-          <SplitImageItem id="ginger_johpgj" />
+          <SplitImageItem id="ginger_johpgj" nofocus />
         </MenuItem>
 
         <MenuItem
@@ -217,7 +217,7 @@ export default define.page<typeof handler>(() => {
           description="Creamy oat milk blended with premium ceremonial-grade matcha."
           side="right"
         >
-          <SplitImageItem id="macha-latte_sqxq3z" />
+          <SplitImageItem id="macha-latte_sqxq3z" nofocus />
         </MenuItem>
 
         <MenuItem
@@ -226,7 +226,7 @@ export default define.page<typeof handler>(() => {
           description="A warming blend of aromatic spices and black tea, perfectly balanced with creamy oat milk and a touch of agave sweetness."
           side="left"
         >
-          <SplitImageItem id="chai-latte_hygayl" />
+          <SplitImageItem id="chai-latte_vdtjr9" nofocus />
         </MenuItem>
 
         <MenuItem

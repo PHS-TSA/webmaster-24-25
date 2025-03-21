@@ -30,8 +30,18 @@ export function SplitTextItem({ children }: SplitTextItemProps): JSX.Element {
 
 export interface SplitImageItemProps {
   id: string;
+
+  nofocus?: boolean;
 }
 
 export function SplitImageItem(props: SplitImageItemProps): JSX.Element {
-  return <Image class="h-72 w-full object-cover" description="" {...props} />;
+  return (
+    <Image
+      height={288}
+      width={650}
+      class="h-72 w-full object-cover"
+      description=""
+      {...props}
+    />
+  );
 }

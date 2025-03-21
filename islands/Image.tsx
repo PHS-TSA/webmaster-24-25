@@ -1,18 +1,21 @@
 import type { JSX } from "preact";
-import { useImage } from "../utils/cloudinary.ts";
-import { description } from "../utils/site.ts";
+import { type ImageOptions, useImage } from "../utils/cloudinary.ts";
 import { CloudImage } from "./CloudImage.tsx";
 
-export interface MenuImageProps {
+export interface MenuImageProps extends ImageOptions {
   id: string;
+  description: string;
 
   class?: string;
-
-  description: string;
 }
 
-export function Image({ id, class: className }: MenuImageProps): JSX.Element {
-  const image = useImage(id);
+export function Image({
+  id,
+  description,
+  class: className,
+  ...imageOptions
+}: MenuImageProps): JSX.Element {
+  const image = useImage(id, imageOptions);
 
   return <CloudImage class={className} src={image} alt={description} />;
 }
