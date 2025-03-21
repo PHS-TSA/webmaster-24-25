@@ -22,7 +22,11 @@ export default define.page<typeof handler>(() => {
         <span class="absolute z-10 max-w-64 px-14 py-8 font-black text-4xl text-white [text-shadow:2px_2px_#00000080] sm:max-w-sm sm:p-14 sm:text-6xl md:max-w-lg md:p-20 md:text-8xl lg:max-w-4xl lg:p-32 lg:text-9xl">
           {siteName}
         </span>
-        <Image id="background-griddle_exps2q" description="" />
+        <Image
+          class="h-full w-full object-cover"
+          id="background-griddle_exps2q"
+          description=""
+        />
         <div class="pointer-events-none absolute inset-0 bg-black bg-opacity-10" />
       </div>
 
