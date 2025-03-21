@@ -66,7 +66,7 @@ export default define.page(({ Component, state }): JSX.Element => {
         {metas}
       </head>
       <body
-        class="bg-gradient-to-br from-neutral-50 to-green-500 text-slate-950 dark:from-neutral-950 dark:to-green-500 dark:text-slate-50"
+        class="bg-gradient-to-b from-green-100 to-green-50 text-slate-950 dark:from-green-900 dark:to-green-950 dark:text-slate-50"
         f-client-nav={true}
       >
         <Partial name="body">
