@@ -84,10 +84,13 @@ export default define.page<typeof handler>(() => {
             <SplitTextItem>
               <h2>Our Commitment to Sustainability</h2>
               <p>
-                As a <a href="/sustainability">company dedicated to sustainability</a>, we’re 100% powered by
-                green energy (and carbon neutral). We also compost all of our
-                food waste and use electric stoves to reduce our impact on the
-                environment.
+                As a{" "}
+                <a href="/sustainability">
+                  company dedicated to sustainability
+                </a>
+                , we’re 100% powered by green energy (and therefore carbon
+                neutral). We also compost all of our food waste and use electric
+                stoves to reduce our impact on the environment.
               </p>
             </SplitTextItem>
           }

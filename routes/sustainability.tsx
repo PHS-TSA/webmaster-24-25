@@ -9,9 +9,10 @@ export default define.page(() => {
       <p>
         Our ingredients are organic and sourced from local farms. We
         specifically get our ingredients from local farms to reduce the carbon
-        emissions that come from transportation. Eli note: Vegan food is
-        naturally dairy-free, shellfish-free, and vegetarian, often
-        allergen-friendly and kosher.
+        emissions that come from transportation.
+        <br />
+        Vegan food is naturally dairy-free, shellfish-free, and vegetarian, and
+        most of our food is also allergen-friendly and kosher.
       </p>
       <h2>Reducing Our Food Waste</h2>
       <p>
