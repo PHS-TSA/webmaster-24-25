@@ -283,7 +283,7 @@ interface MenuItemProps {
 
 function MenuItem({ name, description, children, price, side }: MenuItemProps) {
   return (
-    <div class="grid w-full max-w-6xl grid-cols-1 items-center gap-4 overflow-hidden rounded-2xl bg-green-400 md:grid-cols-12 dark:bg-green-700">
+    <div class="grid w-full max-w-6xl grid-cols-1 items-center gap-4 overflow-hidden rounded-2xl bg-green-400 shadow-lg md:grid-cols-12 dark:bg-green-700">
       <div
         class={clsx(
           "w-full md:col-span-7",
