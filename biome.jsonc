@@ -29,7 +29,8 @@
         "noImplicitBoolean": "off",
         "useDefaultSwitchClause": "off",
         "useFilenamingConvention": "off",
-        "useNamingConvention": "off"
+        "useNamingConvention": "off",
+        "useBlockStatements": "off"
       },
       "complexity": {
         "useLiteralKeys": "off"
