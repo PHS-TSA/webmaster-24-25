@@ -241,7 +241,7 @@ export default define.page<typeof handler>(() => {
         <MenuItem
           price="$4.99"
           name="Avocado Super Smoothie"
-          description="Creamy avocado blended with spinach, banana, spirulina, and almond milk for a nutrient-packed green dream that’ll keep you powered up all day."
+          description="Creamy avocado blended with spinach, banana, and almond milk for a nutrient-packed green dream that’ll keep you powered up all day."
           side="right"
         >
           <SplitImageItem id="avocado-smoothie_dr92i2" />
@@ -250,7 +250,7 @@ export default define.page<typeof handler>(() => {
         <MenuItem
           price="$4.99"
           name="Buttermilk Shake"
-          description="Our cultured cashew buttermilk blended with maple syrup and vanilla bean creates a tangy-sweet shake that's both nostalgic and revolutionary."
+          description="Our cultured cashew buttermilk blended with maple syrup and vanilla bean creates a sweet shake that’s nostalgic for those nights in lodge."
           side="right"
         >
           <SplitImageItem id="buttermilk-shake_lc6twv" />
@@ -259,7 +259,7 @@ export default define.page<typeof handler>(() => {
         <MenuItem
           price="$4.99"
           name="Strawberry Chia Smoothie"
-          description="Fresh strawberries and banana whirled with coconut yogurt and chia seeds—it’s like summer in a glass with a satisfying superfood boost."
+          description="Fresh strawberries and banana whirled with coconut yogurt and chia seeds—it’s like summer in a glass with a satisfying dose of superfood."
           side="right"
         >
           <SplitImageItem id="strawberry-chia-smoothie_qpknnz" />
