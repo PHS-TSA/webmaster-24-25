@@ -2,8 +2,8 @@ import { define } from "../utils.ts";
 
 export default define.page(() => {
   return (
-    <main class="prose prose-slate dark:prose-invert p-4">
-      <h1>Sustainability</h1>
+    <main class="prose prose-slate dark:prose-invert w-full p-4">
+      <h1 class="mx-auto max-w-fit font-semibold text-4xl">Sustainability</h1>
       Why should you feel good about eating our food?
       <h2>Our Ingredients</h2>
       <p>

@@ -14,8 +14,8 @@ export const handler = define.handlers({
 
 export default define.page(() => {
   return (
-    <main class="prose prose-slate dark:prose-invert p-4">
-      <h1>About</h1>
+    <main class="prose prose-slate dark:prose-invert w-full p-4">
+      <h1 class="mx-auto max-w-fit font-semibold text-4xl">About</h1>
       <h2>It’s all about you</h2>
       <p>
         Here at Off The Griddle, our customers are always our number one

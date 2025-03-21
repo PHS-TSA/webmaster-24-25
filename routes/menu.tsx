@@ -16,10 +16,10 @@ export const handler = define.handlers({
 
 export default define.page<typeof handler>(() => {
   return (
-    <main class="py-4">
+    <main class="w-full p-4">
       <h1 class="mx-auto max-w-fit font-semibold text-4xl">Menu</h1>
 
-      <div class="flex flex-col items-center gap-4 p-4 md:gap-8 md:p-8">
+      <div class="flex flex-col items-center gap-4 py-4 md:gap-8 md:p-8">
         <h2 class="mx-auto mt-6 mb-4 max-w-fit text-center font-semibold text-3xl">
           Griddlelicous
         </h2>

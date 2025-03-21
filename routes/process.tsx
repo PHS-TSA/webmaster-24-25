@@ -3,8 +3,8 @@ import { define } from "../utils.ts";
 
 export default define.page(() => {
   return (
-    <main class="p-4">
-      <h1>Process</h1>
+    <main class="w-full p-4">
+      <h1 class="mx-auto max-w-fit font-semibold text-4xl">Process</h1>
 
       <div class="timeline">
         <div class="timeline-container timeline-left">
