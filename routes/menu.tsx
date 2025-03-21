@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { type PageResponse, page } from "fresh";
 import type { VNode } from "preact";
 import { SplitImageItem } from "../components/Split.tsx";
@@ -281,19 +282,22 @@ interface MenuItemProps {
 }
 
 function MenuItem({ name, description, children, price, side }: MenuItemProps) {
-  const child = <div class="w-full md:w-7/12">{children}</div>;
-
   return (
-    <div class="flex w-full max-w-6xl flex-col items-center justify-center gap-4 overflow-hidden rounded-2xl bg-green-400 md:flex-row dark:bg-green-700">
-      {side === "left" && child}
+    <div class="grid w-full max-w-6xl grid-cols-1 items-center gap-4 overflow-hidden rounded-2xl bg-green-400 md:grid-cols-12 dark:bg-green-700">
+      <div
+        class={clsx(
+          "w-full md:col-span-7",
+          side === "right" && "md:order-last",
+        )}
+      >
+        {children}
+      </div>
 
-      <div class="w-full place-items-center p-4 text-lg md:w-5/12">
+      <div class="w-full p-4 text-lg md:col-span-5">
         <h3 class="text-xl">{name}</h3>
         <p>Price: {price}</p>
         <p>{description}</p>
       </div>
-
-      {side === "right" && child}
     </div>
   );
 }
