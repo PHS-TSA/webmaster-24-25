@@ -1,11 +1,11 @@
 import { type PageResponse, page } from "fresh";
 import { define } from "../utils.ts";
+import { description } from "../utils/site.ts";
 
 export const handler = define.handlers({
   GET(ctx): PageResponse<undefined> {
     ctx.state.meta = {
-      title: "Some Clever Name",
-      description: "Some clever description",
+      description,
     };
 
     return page();
