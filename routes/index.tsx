@@ -2,13 +2,12 @@ import { type PageResponse, page } from "fresh";
 import { Split, SplitImageItem, SplitTextItem } from "../components/Split.tsx";
 import { Image } from "../islands/Image.tsx";
 import { define } from "../utils.ts";
-import { siteName } from "../utils/site.ts";
+import { description, siteName } from "../utils/site.ts";
 
 export const handler = define.handlers({
   GET(ctx): PageResponse<undefined> {
     ctx.state.meta = {
-      title: "Some Clever Name",
-      description: "Some clever description",
+      description,
     };
 
     return page();
