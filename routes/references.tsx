@@ -19,17 +19,12 @@ export default define.page(() => {
         Reference Page
       </h1>
       <h2>Required Documentation</h2>
-      <ul>
+      <ul f-client-nav={false}>
         <li>
-          <a f-client-nav={false} href="/copyright.pdf">
-            {" "}
-            Student Copyright Checklist
-          </a>
+          <a href="/copyright.pdf"> Student Copyright Checklist</a>
         </li>
         <li>
-          <a f-client-nav={false} href="/work-log.pdf">
-            Work Log
-          </a>
+          <a href="/work-log.pdf">Work Log</a>
         </li>
       </ul>
 
