@@ -77,7 +77,7 @@ export default define.page<typeof handler>(() => {
                 quality!
                 <br />
                 As a family-owned business, our chefs{" "}
-                <a href="prepare"> prepare your food</a> with love.
+                <a href="/process"> prepare your food</a> with love.
               </p>
             </SplitTextItem>
           }
